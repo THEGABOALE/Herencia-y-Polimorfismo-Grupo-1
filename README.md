@@ -1,9 +1,18 @@
+# Herencia-y-Polimorfismo-Grupo-4
+
+**Objetivo**: Aplicar herencia, polimorfismo, clases abstractas e interfaces.
+
+---
+
 ## Instrucciones:
 - Crea una clase abstracta `Vehiculo` con atributos `marca` y `modelo`, y un método abstracto `mover()`.
-- Implementa subclases como  `Carro`, `Moto` y `Camion`, cada una sobrescribiendo `mover()`.
+- Implementa subclases como `Carro`, `Moto` y `Camion`, cada una sobrescribiendo `mover()`.
 - Crea una interfaz `Combustible` con un método `recargar()`. Haz que `Carro` y `Camion` la implementen.
 - En el `main`, genera un arreglo de `Vehiculo` e invoca sus métodos polimórficamente.
-- Entrega esperada: Repositorio con código documentado + un diagrama sencillo de la jerarquía de clases.
+
+**Entrega esperada**: Repositorio con código documentado + un diagrama sencillo de la jerarquía de clases.
+
+---
 
 ## Diagrama de jerarquía de clases
 
@@ -67,4 +76,3 @@ classDiagram
     Combustible <|.. Carro
     Combustible <|.. Camion
     Main --> Vehiculo : usa
-```
