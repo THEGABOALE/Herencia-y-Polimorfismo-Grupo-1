@@ -1,4 +1,4 @@
-# Herencia-y-Polimorfismo-Grupo-4
+# Herencia-y-Polimorfismo-Grupo-1
 
 **Objetivo**: Aplicar herencia, polimorfismo, clases abstractas e interfaces.
 
