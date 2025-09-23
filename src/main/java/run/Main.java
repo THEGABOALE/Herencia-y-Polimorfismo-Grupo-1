@@ -4,7 +4,7 @@ import models.Moto;
 import models.Camion;
 import interfaces.Combustible;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         // Crear un arreglo polimórfico de Vehiculo
         Vehiculo[] vehiculos = {
