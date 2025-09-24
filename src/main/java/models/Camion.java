@@ -14,7 +14,7 @@ public class Camion extends Vehiculo implements Combustible {
     }
 
     @Override
-    public void mover() {
+    public void mover() { /*Permite mover el camion si hay combustible suficiente*/
         if (nivelCombustible > 0) {
             System.out.println("El camión " + marca + " " + modelo + " transporta carga pesada por la autopista.");
             nivelCombustible -= 10;
@@ -24,25 +24,27 @@ public class Camion extends Vehiculo implements Combustible {
     }
 
     @Override
-    public void recargar(double cantidad) {
+    public void recargar(double cantidad) /*Podemos recagra con la cantidad indicada*/
+    {
         nivelCombustible += cantidad;
         System.out.println("Recargando " + cantidad + " litros de " + TIPO_COMBUSTIBLE +
                 " en el camión " + marca + " " + modelo);
     }
 
-    @Override
+    @Override /*Devuelve el tipo de combustible usado por el camión*/
     public String getTipoCombustible() {
         return TIPO_COMBUSTIBLE;
     }
 
+    /*Returna el nvel de combustible del camion*/
     public double getNivelCombustible() {
         return nivelCombustible;
     }
-
+    /*Simula la carga del camion*/
     public void cargarMercancia() {
         System.out.println("Cargando " + capacidadCarga + " toneladas en el camión " + marca + " " + modelo);
     }
-
+/*Con esto obtenemos la capacidad de carga del camion*/
     public double getCapacidadCarga() {
         return capacidadCarga;
     }

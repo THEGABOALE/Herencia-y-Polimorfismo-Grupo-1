@@ -17,7 +17,7 @@ public class Main{
         };
 
         System.out.println("=== DEMOSTRACIÓN DE POLIMORFISMO CON VEHÍCULOS ===\n");
-
+    
         // Iterar a través del arreglo y llamar al método mover() polimórficamente
         System.out.println("--- Moviendo todos los vehículos ---");
         for (Vehiculo vehiculo : vehiculos) {
